@@ -1,8 +1,9 @@
 package com.group.libraryapp.calculator
 
-data class Calculator(
-    private var number: Int
+class Calculator(
+    var number: Int
 ) {
+
     fun add(operand: Int){
         this.number += operand
     }
