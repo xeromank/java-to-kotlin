@@ -6,10 +6,12 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import lombok.Getter;
 
 import static javax.persistence.GenerationType.IDENTITY;
 
 @Entity
+@Getter
 public class UserLoanHistory {
 
   @Id

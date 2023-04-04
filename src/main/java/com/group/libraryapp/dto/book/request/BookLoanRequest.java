@@ -1,5 +1,8 @@
 package com.group.libraryapp.dto.book.request;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 public class BookLoanRequest {
 
   private String userName;
