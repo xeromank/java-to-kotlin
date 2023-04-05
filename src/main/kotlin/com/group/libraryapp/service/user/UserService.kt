@@ -26,7 +26,7 @@ class UserService(
     @Transactional
     fun getUser(): List<UserResponse>{
         return userRepository.findAll()
-            .map { user -> UserResponse(user) }
+            .map { user -> UserResponse.of(user) }
     }
 
     @Transactional
